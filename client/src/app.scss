@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "AdiBold";   /*Can be any text*/
+    src: local("adineue-PRO-Bold-Web-Regular"),
+      url("./Fonts/adineue-PRO-Bold-Web-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoBlackItalic";   /*Can be any text*/
+    src: local("Roboto-BlackItalic"),
+      url("./Fonts/Roboto-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoLight";   /*Can be any text*/
+    src: local("Roboto-Light"),
+      url("./Fonts/Roboto-Light.ttf") format("truetype");
+}
+
+.app{
+    .link{
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "RobotoLight";
+}
+
