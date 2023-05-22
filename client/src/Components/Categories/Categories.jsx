@@ -7,13 +7,13 @@ const Categories = () => {
     <div className='categories'>
         <div className="col">
           <div className="row">
-            <img src="../../../public/img/Products/roos.png" alt="" />
+            <img src="/img/Products/roos.png" alt="" />
             <button>
               <Link className="link" to="./products/1">Sale</Link>
             </button>
           </div>
           <div className="row">
-            <img src="../../../public/img/Products/roos.png" alt="" />
+            <img src="/img/Products/roos.png" alt="" />
             <button>
               <Link className="link" to="./products/1">Woman</Link>
             </button>
@@ -21,7 +21,7 @@ const Categories = () => {
         </div>
         <div className="col">
           <div className="row">
-            <img src="../../../public/img/Products/roos.png" alt="" />
+            <img src="/img/Products/roos.png" alt="" />
             <button>
               <Link className="link" to="./products/1">Men</Link>
             </button>
@@ -31,7 +31,7 @@ const Categories = () => {
           <div className="row">
             <div className="col">
               <div className="row">
-                <img src="../../../public/img/Products/roos.png" alt="" />
+                <img src="/img/Products/roos.png" alt="" />
                 <button>
                   <Link className="link" to="./products/1">Sale</Link>
                 </button>
@@ -39,7 +39,7 @@ const Categories = () => {
             </div>
             <div className="col">
               <div className="row">
-                <img src="../../../public/img/Products/roos.png" alt="" />
+                <img src="/img/Products/roos.png" alt="" />
                 <button>
                   <Link className="link" to="./products/1">Sale</Link>
                 </button>
@@ -47,7 +47,7 @@ const Categories = () => {
             </div>
           </div>
           <div className="row">
-            <img src="../../../public/img/Products/roos.png" alt="" />
+            <img src="/img/Products/roos.png" alt="" />
             <button>
               <Link className="link" to="./products/1">Sale</Link>
             </button>
