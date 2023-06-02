@@ -21,11 +21,14 @@ const Slider = () => {
 
     return (
         <div className='slider'>
-            <span className='text'>EN EQUIPO</span>
-            <span className='text2'>SOMOS MÁS FUERTES</span>
-            <span className='text3'>
-                <a target='blank' href="https://www.youtube.com/watch?v=QIGl4SVXqbM">Reproducir</a>
-            </span>
+
+                <span className='text'>EN EQUIPO</span>
+                <span className='text2'>SOMOS MÁS FUERTES</span>
+                <span className='text3'>
+                    <a target='blank' href="https://www.youtube.com/watch?v=QIGl4SVXqbM">Reproducir</a>
+                </span>
+
+
             <div className="container" style={{transform:`translateX(-${currentSlide*100}vw)`}}>
                 <img src={data[0]} alt="" />
                 <img src={data[1]} alt="" />

@@ -1,28 +1,29 @@
 import React from 'react'
 import "./Footer.scss"
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <div className='footer'>
       <div className="top">
-        <div className="item">
+        {/* <div className="item">
           <h1>Categories</h1>
           <span>Women</span>
           <span>Men</span>
           <span>Children</span>
-        </div>
+        </div> */}
         <div className="item">
           <h1>Links</h1>
-          <span>FAQ</span>
-          <span>Stores</span>
+          <Link className='link' to="/products/1">Tienda</Link>
+          {/* <span>Stores</span> */}
         </div>
         <div className="item">
           <h1>Sobre Nosotros</h1>
-          <span>Desde volleytip queremos impactar el voleibol, desarrollando y solidificando este deporte,para que así se convierta en una herramienta que logre transformar la sociedad a través del tiempo de manera positiva.</span>
+          <span>Queremos impactar el voleibol, desarrollando y solidificando este deporte, para que así logre transformar la sociedad de manera positiva.</span>
         </div>
         <div className="item">
         <h1>Contacto</h1>
-          <span>hablemos@volleytip.com</span>
+          <span>volleytip@volleytip.com</span>
         </div>
       </div>
       <div className="bottom">

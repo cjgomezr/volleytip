@@ -1,0 +1,32 @@
+.box{
+    background-image: linear-gradient(to bottom, gray, transparent);
+
+    .Founders{
+        margin: 0px 200px;
+        height: 90vh;
+        padding: 5px;    
+    
+        .top{
+    
+            h1{
+                text-transform: capitalize;
+                text-align: center;
+                padding-bottom: 5px;
+                font-weight: bold;
+                font-family: "AdiBold";
+                letter-spacing: 1px;
+            }
+      
+        }
+    
+        .bottom{
+            display: flex;
+            justify-content: center;
+            gap:30px;
+            align-items: center;
+            height: 75vh;   
+        }
+    }
+}
+
+

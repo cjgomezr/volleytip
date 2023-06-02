@@ -12,6 +12,10 @@ import "./app.scss"
 import "./Fonts/adineue-PRO-Bold-Web-Regular.ttf";
 import "./Fonts/Roboto-BlackItalic.ttf"
 import "./Fonts/Roboto-Light.ttf"
+import { useEffect } from "react";
+
+
+
 
 const Layout = () => {
   return(
@@ -45,6 +49,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  
   return( 
     <div>
       <RouterProvider router={router}/>

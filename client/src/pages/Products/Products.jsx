@@ -7,7 +7,7 @@ import useFetch from "../../hooks/useFectch";
 const Products = () => {
   const catId = parseInt(useParams().id);
   const [maxPrice, setMaxPrice] = useState(1000);
-  const [sort, setSort] = useState(null);
+  const [sort, setSort] = useState("asc");
   const [selectedSubCats, setSelectedSubCats] = useState([]);
 
   const { data, loading, error } = useFetch(
@@ -42,7 +42,7 @@ const Products = () => {
             </div>
           ))}
         </div>
-        <div className="filterItem">
+        {/* <div className="filterItem">
           <h2>Filter by price</h2>
           <div className="inputItem">
             <span>0</span>
@@ -54,7 +54,7 @@ const Products = () => {
             />
             <span>{maxPrice}</span>
           </div>
-        </div>
+        </div> */}
         <div className="filterItem">
           <h2>Sort By</h2>
           <div className="inputItem">
@@ -80,7 +80,7 @@ const Products = () => {
         </div>
       </div>
       <div className="right">
-        <img className="catImg" src="/img/Slider/1.jpg" alt="" />
+        {/* <img className="catImg" src="/img/Logos/horizontalazul.png" alt="" /> */}
         <List
           catId={catId}
           maxPrice={maxPrice}

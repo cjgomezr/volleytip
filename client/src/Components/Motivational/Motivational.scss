@@ -1,0 +1,48 @@
+.Motivational{
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/Slider/2.jpg");
+
+    .description{
+        position:absolute;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        z-index: 1;
+
+        .left{
+            flex:2;
+            color: white;  
+            max-width: 55%;        
+              
+
+            .text1, .text2{
+                font-weight: bold;
+                font-size: 40px;
+                font-family:"AdiBold";
+
+            }
+
+            .text2{
+                color:#05ede7;
+            }
+            span{
+                font-size: 65px;
+            }
+    
+            p{
+                font-size: 20px;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                text-align: right;
+            }
+    
+        }
+    }
+}

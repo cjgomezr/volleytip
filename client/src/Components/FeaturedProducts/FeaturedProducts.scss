@@ -1,5 +1,6 @@
 .featuredProducts{
     margin: 100px 200px;
+    height: 100vh;
 
     .top{
         display: flex;
@@ -21,6 +22,8 @@
     .bottom{
         display: flex;
         justify-content: center;
-        gap:50px
+        gap:30px;
+        align-items: center;
+   
     }
 }

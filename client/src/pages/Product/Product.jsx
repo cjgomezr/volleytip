@@ -51,9 +51,11 @@ const Product = () => {
             </div>
           </div>
           <div className="right">
+
             <h1>{data?.attributes?.title}</h1>
-            <span className="price">${data?.attributes?.price}</span>
             <p>{data?.attributes?.description}</p>
+            <span className="price">${data?.attributes?.price}</span>
+
             <div className="quantity">
               <button
                 onClick={(e) =>
@@ -68,25 +70,29 @@ const Product = () => {
               </button>
             </div>
 
-            <button
-              className="add"
-              onClick={() =>
-                dispatch(
-                  addToCart({
-                    id: data.id,
-                    title: data.attributes.title,
-                    desc: data.attributes.description,
-                    price: data.attributes.price,
-                    img: data.attributes.img.data.attributes.url,
-                    quantity,
-                  })
-                )
-              }
-            >
-              <AddShoppingCartIcon /> ADD TO CART
-            </button>
+            <div className="addToCar">
+              <button
+                className="add"
+                onClick={() =>
+                  dispatch(                    
+                    addToCart({
+                      id: data.id,
+                      title: data.attributes.title,
+                      desc: data.attributes.description,
+                      price: data.attributes.price,
+                      img: data.attributes.img.data.attributes.url,
+                      quantity,
+                    })
+                  )
+                }
+              >
+                <AddShoppingCartIcon /> Añadir al carrito
+              </button>
+            </div>
 
-            <div className="links">
+
+
+            {/* <div className="links">
               <div className="item">
                 <FavoriteBorderIcon /> ADD TO WISH LIST
               </div>
@@ -94,7 +100,7 @@ const Product = () => {
               <div className="item">
                 <BalanceIcon /> ADD TO COMPARE
               </div>
-            </div>
+            </div> */}
           </div>
         </>
       )}
