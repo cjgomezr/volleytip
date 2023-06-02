@@ -62,9 +62,7 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "normal",
-        "featured",
-        "trending"
+        "General"
       ]
     }
   }
