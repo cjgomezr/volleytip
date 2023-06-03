@@ -10,15 +10,10 @@ const Navbar = () => {
   const products = useSelector((state) => state.cart.products);
   
   
-  const [scroll, setScroll] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50);
-    });
-  }, []);
+
 
   return (
-    <div className= {scroll?'navbar navbar-scrolled':'navbar'}>
+    <div className= 'navbar'>
       <div className="wrapper">
         <div className='left'>
           <div className="item">
@@ -46,7 +41,7 @@ const Navbar = () => {
             <Link className='link' to="/"></Link>
           </div>
           <div className="item">
-            <Link className='link' to="/">Inicio</Link>
+            <Link className='link' to="/"></Link>
           </div>
           <div className="item">
             <Link className='link' to="/products/1">Tienda</Link>

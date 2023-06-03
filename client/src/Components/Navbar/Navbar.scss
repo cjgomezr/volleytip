@@ -9,7 +9,7 @@
   // transition: all 0.5s;
 
   .wrapper {
-    padding: 10px 90px;
+    padding: 10px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,6 +80,30 @@
   }
 }
 
-.navbar-scrolled {
-  background-color: #1f0738;
+@media (max-width: 992px) {
+  .navbar{
+    .wrapper {
+      padding: 10px 15px;
+      justify-content: center;
+      .item {
+      }
+      .right {
+        gap: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .navbar{
+    .wrapper {
+      padding: 10px 15px;
+      justify-content: center;
+      .item {
+      
+      }
+      .right {
+        gap: 15px;
+      }
+    }
+  }
 }
