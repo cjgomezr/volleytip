@@ -89,18 +89,6 @@ const Product = () => {
                 <AddShoppingCartIcon /> Añadir al carrito
               </button>
             </div>
-
-
-
-            {/* <div className="links">
-              <div className="item">
-                <FavoriteBorderIcon /> ADD TO WISH LIST
-              </div>
-
-              <div className="item">
-                <BalanceIcon /> ADD TO COMPARE
-              </div>
-            </div> */}
           </div>
         </>
       )}

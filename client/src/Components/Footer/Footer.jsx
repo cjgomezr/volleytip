@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='footer'>
+
       <div className="top">
         {/* <div className="item">
           <h1>Categories</h1>
@@ -26,15 +27,17 @@ const Footer = () => {
           <span>volleytip@volleytip.com</span>
         </div>
       </div>
+      
       <div className="bottom">
-          <div className="left">
-            <span className='logo'>VOLLEYTIP</span>
-            <span className="copyright">Copyright 2023. All Rights Reserved</span>
-          </div>
-          <div className="right">
-            <img src="" alt="" />
-          </div>
+        <div className="left">
+          <span className='logo'>VOLLEYTIP</span>
+          <span className="copyright">Copyright 2023. All Rights Reserved</span>
         </div>
+        <div className="right">
+          <img src="" alt="" />
+        </div>
+      </div>
+
     </div>
   )
 }

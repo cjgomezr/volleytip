@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .WhoWeAre{
     height:100vh;
     width: 100vw;
@@ -13,28 +15,25 @@
         display: flex;
         align-items: center;
         height: 100vh;
-        margin-left: 150px;
-        justify-content: center;
         z-index: 1;
+        margin: 0px 150px;
 
         .left{
             flex:1;
-            color: white;  
-            max-width: 40%;
-            
+            color: white;     
 
             h1{
                 font-weight: bold;
                 font-size: 30px;
                 font-family: "AdiBold";
-                text-align: center;
+                text-align: left;
             }
     
             p{
                 font-size: 20px;
                 letter-spacing: 0.5px;
                 font-weight: 700;
-                text-align: center;
+                text-align: left;
             }
     
         }
@@ -42,11 +41,11 @@
         .right{
             flex: 1;
             color: white;
-            margin-left: 150px;
             display: flex; 
             flex-direction: column;
             font-family: "AdiBold"; 
             font-weight: bold;
+            text-align: right;
 
             .text1{
                 font-size: 30px; 
@@ -60,4 +59,126 @@
             }
         }
     }
+}
+
+@include breakpoint-small {
+
+    .WhoWeAre{
+    
+        .description{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+    
+            .left{    
+                margin-top: 100px;
+                h1{
+                    font-size: 30px;
+                    text-align: center;
+                }
+        
+                p{
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        
+            .right{
+                text-align: center;
+    
+                .text1{
+                    font-size: 30px; 
+                }
+                .text2{
+                    font-size: 80px;   
+                }
+                .text3{
+                    font-size: 90px;
+                    margin-top: -20px;  
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint-medium {
+
+    .WhoWeAre{
+    
+        .description{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+    
+            .left{    
+                margin-top: 100px;
+                h1{
+                    font-size: 30px;
+                    text-align: center;
+                }
+        
+                p{
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        
+            .right{
+                text-align: center;
+    
+                .text1{
+                    font-size: 30px; 
+                }
+                .text2{
+                    font-size: 80px;   
+                }
+                .text3{
+                    font-size: 90px;
+                    margin-top: -20px;  
+                }
+            }
+        }
+    }
+
+}
+
+@include breakpoint-large {
+
+    .WhoWeAre{
+    
+        .description{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+    
+            .left{    
+                margin-top: 100px;
+                h1{
+                    font-size: 25px;
+                    text-align: center;
+                }
+        
+                p{
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        
+            .right{
+                text-align: center;
+    
+                .text1{
+                    font-size: 30px; 
+                }
+                .text2{
+                    font-size: 60px;   
+                }
+                .text3{
+                    font-size: 60px;
+                    margin-top: -20px;  
+                }
+            }
+        }
+    }
+
 }

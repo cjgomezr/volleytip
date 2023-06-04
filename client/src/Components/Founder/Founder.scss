@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .founder{
     width: 230px;
     display: flex;
@@ -11,7 +13,7 @@
 
     .image{
         width: 100%;
-        height: 370px;
+        height: 350px;
         overflow: hidden;
         position: relative;
         border-radius: 15px;
@@ -29,4 +31,52 @@
         font-size: 15px;
     }
 
+}
+
+@include breakpoint-small{
+
+    .founder{
+        width: 150px;
+        flex-direction: column;
+    
+        .title{
+            font-size: 40px;
+        }
+    
+        .image{
+            width: 100%;
+            height: 280px;
+    
+            img{
+                width: 100%;
+                height: 100%;
+            }        
+        }    
+    }
+}
+  
+@include breakpoint-medium {
+
+    .founder{
+        width: 200px;
+        flex-direction: column;
+    
+        .title{
+            font-size: 40px;
+        }
+    
+        .image{
+            width: 100%;
+            height: 300px;
+    
+            img{
+                width: 100%;
+                height: 100%;
+            }        
+        }    
+    }
+
+}
+  
+@include breakpoint-large {
 }

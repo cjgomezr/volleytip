@@ -10,11 +10,11 @@ const Contact = () => {
   return (
     <div className='contact'>
         <div className="wrapper">
-            <span>CONTACTATE CON NOSOTROS</span>
-            <div className="mail">
+            {/* <span>SIGUENOS</span> */}
+            {/* <div className="mail">
                 <input type="text" placeholder='Ingresa tu mensaje...' />
                 <button>ENVIAR</button>
-            </div>
+            </div> */}
             <div className="icons">
                 <a target='blank' href="https://www.facebook.com/volleytip"><FacebookIcon/></a>
                 <a target='blank' href="https://www.instagram.com/volleytip/"><InstagramIcon/></a>

@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .Motivational{
     height:100vh;
     width: 100vw;
@@ -19,30 +21,64 @@
         .left{
             flex:2;
             color: white;  
-            max-width: 55%;        
+            max-width: 50%;        
               
-
             .text1, .text2{
                 font-weight: bold;
                 font-size: 40px;
                 font-family:"AdiBold";
-
+                
             }
-
+            
             .text2{
                 color:#05ede7;
             }
             span{
-                font-size: 65px;
+                font-size: 50px;
             }
-    
+                
             p{
                 font-size: 20px;
                 letter-spacing: 0.5px;
                 font-weight: 700;
-                text-align: right;
+                text-align: center;
             }
-    
+                
         }
     }
+}
+
+@include breakpoint-small{
+
+}
+
+@include breakpoint-medium {
+
+    .Motivational{
+    
+        .description{
+    
+            .left{
+                max-width: 85%;
+   
+                .text1, .text2{
+                    font-size: 35px;
+                }
+                
+                .text2{
+                    color:#05ede7;
+                }
+                span{
+                    font-size: 35px;
+                }
+
+                p{
+                    text-align: center;
+                }    
+            }
+        }
+    }
+}
+
+@include breakpoint-large {
 }

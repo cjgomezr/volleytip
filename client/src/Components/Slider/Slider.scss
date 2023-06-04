@@ -1,55 +1,62 @@
+@import "../../app.scss";
+
 .slider{
     height:calc(100vh - 60px);
     width: 100vw;
     position: relative;
 
-
-    span {
+    .boxtext{
         position: absolute;
-        left: 150px;
-        color: white;
-        padding: 3px 5px;
-        z-index: 3;
-        font-weight: bold;
-        font-size: 60px;
-        font-family: "AdiBold";
-    }
-
-    span.text{
-        top: 185px;
-    }
-
-    span.text2{
-        top: 255px;
-    }
-
-    span.text3{
-        top: 370px;
-        font-size: 20px;
-        font-family: "RobotoLight";
-        border: 1px solid white;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        cursor: pointer;
-        border-radius: 10px;
-        transition: all 1s ease;
-
-        &:hover{
-            background-color: #05ede7;
-        }
-
-        a{
+        width: 100%;
+        span {
+            position: absolute;
+            left: 150px;
             color: white;
-            text-decoration: none;
-            padding: 5px;
-
+            padding: 3px 5px;
+            z-index: 3;
+            font-weight: bold;
+            font-size: 60px;
+            font-family: "AdiBold";
+        }
+    
+        span.text{
+            top: 185px;
+        }
+    
+        span.text2{
+            top: 245px;
+        }
+    
+        span.text3{
+            top: 390px;
+            font-size: 20px;
+            font-family: "RobotoLight";
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 1s ease;
+    
             &:hover{
-                color: black;
-
+                background-color: #05ede7;
+            }
+    
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+    
+                &:hover{
+                    color: black;
+    
+                }
             }
         }
+
     }
+
 
     .container{
         width: 300vw;
@@ -91,5 +98,81 @@
         }
         }
 
+    }
+}
+
+@include breakpoint-small {
+    .slider{    
+        .boxtext{
+            top: 80px;
+            span {
+                left: 40px;
+                padding: 3px 5px;
+                font-size: 40px;      
+            }
+        
+            span.text{
+                top: 210px;    
+            }
+        
+            span.text2{
+                top: 270px;
+            }
+        
+            span.text3{
+                top: 420px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@include breakpoint-medium {
+    .slider{    
+        .boxtext{
+            top: 100px;
+            span {
+                left: 50px;
+                padding: 3px 5px;
+                font-size: 40px;      
+            }
+        
+            span.text{
+                top: 210px;    
+            }
+        
+            span.text2{
+                top: 270px;
+            }
+        
+            span.text3{
+                top: 400px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@include breakpoint-large {
+    .slider{    
+        .boxtext{
+            span {
+                padding: 3px 5px;
+                font-size: 43px;      
+            }
+        
+            span.text{
+                top: 200px;    
+            }
+        
+            span.text2{
+                top: 250px;
+            }
+        
+            span.text3{
+                top: 400px;
+                font-size: 20px;
+            }
+        }
     }
 }

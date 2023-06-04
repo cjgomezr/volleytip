@@ -22,16 +22,18 @@ const Slider = () => {
     return (
         <div className='slider'>
 
+            <div className="boxtext">
                 <span className='text'>EN EQUIPO</span>
                 <span className='text2'>SOMOS MÁS FUERTES</span>
                 <span className='text3'>
                     <a target='blank' href="https://www.youtube.com/watch?v=QIGl4SVXqbM">Reproducir</a>
                 </span>
+            </div>
 
 
             <div className="container" style={{transform:`translateX(-${currentSlide*100}vw)`}}>
-                <img src={data[0]} alt="" />
                 <img src={data[1]} alt="" />
+                <img src={data[0]} alt="" />
                 <img src={data[2]} alt="" />
             </div>
 

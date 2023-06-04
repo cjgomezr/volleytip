@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .product{
     padding: 20px 50px;
     display: flex;
@@ -109,20 +111,79 @@
                 }
             }
         }
+    }
+}
 
+@include breakpoint-small {
 
-        .links{
-            display: flex;
-            gap: 20px;
+    .product{
+        flex-direction: column;
+        height: 110vh;
+    
+        .left{
+            flex-direction: column;
 
-            .item{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                color: blue($color: #000000);
-                font-size: 14px;
-                cursor: pointer;
+            .images{
+
+                img{
+                    width: 15%;
+                    height: 120px;
+                    padding: 5px;
+                }
             }
+
+        }
+
+        .right{
+    
+            p{
+                text-align: justify;
+            }
+            
         }
     }
+
+}
+
+@include breakpoint-medium {
+
+    .product{
+        flex-direction: column;
+        height: 140vh;
+    
+        .left{
+            flex-direction: column;
+
+            .images{
+
+                img{
+                    width: 15%;
+                    height: 100px;
+                    padding: 5px;
+                }
+            }
+            .mainImg{
+                
+
+                img{
+                    width:100%;
+                    max-height: 100vh;
+                }
+            }
+        }
+
+        .right{
+    
+            p{
+                text-align: justify;
+            }
+            
+        }
+    }
+
+}
+
+@include breakpoint-large {
+
+
 }

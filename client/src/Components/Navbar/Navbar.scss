@@ -1,18 +1,16 @@
+@import "../../app.scss";
+
 .navbar {
   height: 50px;
   padding: 5px 0px 11px 0px;
   background-color: #1f0738;
-  // position: fixed; /* Set the navbar to fixed position */
-  // top: 0; /* Position the navbar at the top of the page */
-  // width: 100%; /* Full width */
-  // z-index: 999;
-  // transition: all 0.5s;
 
   .wrapper {
     padding: 10px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .item {
       display: flex;
       align-items: center;
@@ -80,30 +78,20 @@
   }
 }
 
-@media (max-width: 992px) {
+@include breakpoint-small{
   .navbar{
     .wrapper {
       padding: 10px 15px;
       justify-content: center;
-      .item {
-      }
       .right {
         gap: 15px;
       }
     }
   }
 }
-@media (max-width: 700px) {
-  .navbar{
-    .wrapper {
-      padding: 10px 15px;
-      justify-content: center;
-      .item {
-      
-      }
-      .right {
-        gap: 15px;
-      }
-    }
-  }
+
+@include breakpoint-medium {
+}
+
+@include breakpoint-large {
 }

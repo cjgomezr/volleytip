@@ -14,7 +14,7 @@ const WhoWeAre = () => {
                 <div className="right">
                     <div className='text1'>volleytip</div>
                     <div className='text2'>SOMOS</div>
-                    <div className='text3'>TODOS...</div>
+                    <div className='text3'>TODOS</div>
                 </div>
             </div>
 

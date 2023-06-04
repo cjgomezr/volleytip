@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .footer{
     margin: 50px 200px 20px 200px;
 
@@ -62,6 +64,39 @@
             }
         }
 
+    }
+
+}
+
+@include breakpoint-small {
+
+}
+
+@include breakpoint-medium {
+    .footer{
+        margin: 0;
+    
+        .top{
+            display:none
+        }
+
+        .bottom{
+            justify-content: center;
+            .left{
+                .logo{
+                    font-size: 12px;
+                }
+                .copyright{
+                    font-size: 9px;
+                }
+            }
+        }    
+    }
+}
+
+@include breakpoint-large {
+    .footer{
+        margin: 50px 50px 20px 50px;    
     }
 
 }

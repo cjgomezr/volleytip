@@ -1,11 +1,16 @@
+@import "../../app.scss";
+
 .list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 992px) {
-    .list {
-      justify-content: center;
-    }
-  }
+@include breakpoint-medium {
+
+}
+
+@include breakpoint-large {
+
+}
+

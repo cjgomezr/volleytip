@@ -1,9 +1,10 @@
+@import "../../app.scss";
+
 .box{
-    background-image: linear-gradient(to bottom, gray, transparent);
+    background-image: linear-gradient(to bottom, rgb(194, 194, 194) 80%, transparent);
 
     .Founders{
-        margin: 0px 200px;
-        height: 90vh;
+        height: 75vh;
         padding: 5px;    
     
         .top{
@@ -11,7 +12,6 @@
             h1{
                 text-transform: capitalize;
                 text-align: center;
-                padding-bottom: 5px;
                 font-weight: bold;
                 font-family: "AdiBold";
                 letter-spacing: 1px;
@@ -24,9 +24,47 @@
             justify-content: center;
             gap:30px;
             align-items: center;
-            height: 75vh;   
+            height: 60vh;   
         }
     }
+}
+
+@include breakpoint-small{
+
+    .box{
+
+        .Founders{
+            height: 100vh;  
+        
+            .bottom{
+                flex-direction: column;
+                gap:10px;
+                height: 85vh;   
+            }
+        }
+    }
+
+}
+  
+@include breakpoint-medium {
+
+    .box{
+
+        .Founders{
+            height: 100vh;  
+        
+            .bottom{
+                flex-direction: column;
+                gap:10px;
+                height: 85vh;   
+            }
+        }
+    }
+
+}
+  
+@include breakpoint-large {
+
 }
 
 
